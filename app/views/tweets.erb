@@ -1,0 +1,7 @@
+<% if @tweets %>
+  <% @tweets.each do |tweet|  %>
+  <p>
+    <%= tweet.body %>
+  </p>
+  <% end  %>
+<% end  %>

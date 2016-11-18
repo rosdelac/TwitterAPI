@@ -1,0 +1,27 @@
+  <h1>Welcome to Twitter API!</h1>
+  <p>This is an excercise to test out Twitter's API!  </p>
+
+<!-- =================BUTTONS TO DISPLAY FORMS========================= -->
+<button type="button" id="alltweets">Search for tweets</button>
+<button type="button" id="sendtweet">Send a tweet</button>
+<!-- ================================================================== -->
+<!-- =================FORM TO LOOK FOR TWEETS========================= -->
+<form action="/fetch" method="post" id="form1">
+  <br>Twitter Handle:<br>
+  <input type="text" name="twitterhandle">
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<!-- ================================================================= -->
+<!-- =================FORM TO POST TWEETS============================= -->
+<form action="/tweet" method="post" id="form2">
+  <br>Send out a tweet:<br>
+  <input type="text" name="tweet" id="tweetfield" style="width: 500px;">
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<!-- ================================================================ -->
+<!-- =================FORM TO DISPLAY TWEETS========================= -->
+<div id="tws">
+</div>
+<!-- ================================================================ -->
